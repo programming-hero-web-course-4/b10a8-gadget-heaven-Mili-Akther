@@ -1,7 +1,6 @@
-
-const Footer = () => {
+  const Footer = () => {
     return (
-      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <footer className="footer sm:footer-horizontal bg-base-300 text-black py-4 border border-red-500 px-10">
         <nav>
           <h6 className="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>
@@ -24,6 +23,6 @@ const Footer = () => {
         </nav>
       </footer>
     );
-};
+  };
 
-export default Footer;
+  export default Footer;
