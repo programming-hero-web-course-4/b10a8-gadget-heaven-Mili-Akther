@@ -52,7 +52,7 @@ const Banner = () => {
       {/* Floating Banner Image */}
       <div className="absolute left-1/2 transform -translate-x-1/2 max-w-4xl border-2 border-white rounded-4xl">
         <img
-          className="w-[1500px] h-[420px]  rounded-4xl border-18 bg-white/10 backdrop-blur-lg  border-white/10 mb-12"
+          className="w-[1500px] h-[420px]  rounded-4xl border-18 bg-white/10 backdrop-blur-lg  border-white/10 "
           src={bannerImg}
           alt=""
         />
