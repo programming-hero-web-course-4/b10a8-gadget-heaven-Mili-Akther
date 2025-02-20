@@ -3,6 +3,7 @@ import MainLayouts from "../Layouts/MainLayouts";
 import Home from "../Pages/Home";
 import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
+import GadgetsCards from "../Components/GadgetsCards";
 
 const routes = createBrowserRouter([
   {
@@ -12,7 +13,14 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader:() => fetch('./categories.json')
+        loader: () => fetch("../categories.json"),
+        children: [
+          {
+            path: "/category/:category",
+            element: <GadgetsCards></GadgetsCards>,
+            loader: () => fetch("../gadgets.json"),
+          },
+        ],
       },
       {
         path: "/statistics",
@@ -26,4 +34,4 @@ const routes = createBrowserRouter([
   },
 ]);
 
-export default routes
+export default routes;
