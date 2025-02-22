@@ -1,14 +1,30 @@
-import { data, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import Card from "./Card";
+import { useEffect, useState } from "react";
 
 const GadgetsCards = () => {
   const data = useLoaderData();
   const { category } = useParams();
-  console.log(data);
+  const [gadgets, setGadgets] = useState([]);
+
+  useEffect(() => {
+    if (category) {
+      const filterByCategory = data.filter(
+        (gadget) => gadget.category.toLowerCase() === category.toLowerCase()
+      );
+      setGadgets(filterByCategory);
+    } else {
+      setGadgets(data);
+    }
+  }, [category, data]);
+
+  console.log("Data:", data);
+  console.log("Filtered Gadgets:", gadgets);
+
   return (
-    <div className="gird grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {data.map((gadgest) => (
-        <Card key={gadgest.product_id} gadgest={gadgest}></Card>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {gadgets.map((gadget) => (
+        <Card key={gadget.product_id} gadget={gadget}></Card>
       ))}
     </div>
   );

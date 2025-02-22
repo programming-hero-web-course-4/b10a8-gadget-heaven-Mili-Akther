@@ -1,6 +1,6 @@
 
-const Card = ({gadgest}) => {
-    const { price, product_image, product_title } = gadgest || {};
+const Card = ({gadget}) => {
+    const { price, product_image, product_title } = gadget || {};
     return <div>{product_title}</div>;
 };
 

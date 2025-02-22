@@ -3,7 +3,7 @@
     "product_id": "P001",
     "product_title": "Apple iPhone 15 Pro Max",
     "product_image": "https://i.ibb.co.com/F4ghLSP1/iphone-15.webp",
-    "category": "Smartphones",
+    "category": "Phones",
     "price": 1299,
     "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
     "specification": [
@@ -20,7 +20,7 @@
     "product_id": "P002",
     "product_title": "Samsung Galaxy S23 Ultra",
     "product_image": "https://i.ibb.co.com/j90hc1Zm/THUMB-005-galaxy-s23ultra-device-spen-back-green.jpg",
-    "category": "Smartphones",
+    "category": "Phones",
     "price": 1199,
     "description": "Powerful performance and an advanced camera system.",
     "specification": [
@@ -37,7 +37,7 @@
     "product_id": "P003",
     "product_title": "Google Pixel 7 Pro",
     "product_image": "https://i.ibb.co.com/chC2DNnT/Pixel-7-Pro-Snow-custom-mac-bd.webp",
-    "category": "Smartphones",
+    "category": "Phones",
     "price": 899,
     "description": "Google’s best AI-powered smartphone experience.",
     "specification": [
@@ -54,7 +54,7 @@
     "product_id": "P004",
     "product_title": "OnePlus 11 5G",
     "product_image": "https://i.ibb.co.com/5xkw1Ckb/oneplus-11-2.jpg",
-    "category": "Smartphones",
+    "category": "Phones",
     "price": 799,
     "description": "Flagship power with Hasselblad-tuned cameras.",
     "specification": [
@@ -71,7 +71,7 @@
     "product_id": "P005",
     "product_title": "Sony Xperia 1 V",
     "product_image": "https://i.ibb.co.com/gM7CQxGw/xperia1v.jpg",
-    "category": "Smartphones",
+    "category": "Phones",
     "price": 1199,
     "description": "Cinematic display and pro-grade camera features.",
     "specification": [
@@ -88,7 +88,7 @@
     "product_id": "P006",
     "product_title": "Xiaomi 13 Pro",
     "product_image": "https://i.ibb.co.com/k2FF9qmS/Xiaomi-13-Pro.jpg",
-    "category": "Smartphones",
+    "category": "Phones",
     "price": 1099,
     "description": "Leica-powered cameras with ultra-fast charging.",
     "specification": [
@@ -139,7 +139,7 @@
     "product_id": "S001",
     "product_title": "Apple Watch Ultra",
     "product_image": "https://i.ibb.co.com/LzJ8BXxS/Apple-Watch-Ultra.jpg",
-    "category": "Smartwatches",
+    "category": "Smart Watches",
     "price": 799,
     "description": "The toughest and most powerful Apple Watch.",
     "specification": [
@@ -156,7 +156,7 @@
     "product_id": "S002",
     "product_title": "Samsung Galaxy Watch 5 Pro",
     "product_image": "https://i.ibb.co.com/xKC6thPR/THUMB-003.jpg",
-    "category": "Smartwatches",
+    "category": "Smart Watches",
     "price": 499,
     "description": "Advanced health tracking with premium design.",
     "specification": [
@@ -168,5 +168,108 @@
     ],
     "availability": false,
     "rating": 4.6
+  },
+  {
+    "product_id": "A001",
+    "product_title": "Apple AirPods Pro (2nd Gen)",
+    "product_image": "https://i.ibb.co.com/xyz123/airpods-pro.jpg",
+    "category": "Accessories",
+    "price": 249,
+    "description": "Active Noise Cancellation and immersive sound experience.",
+    "specification": [
+      "H2 chip",
+      "Adaptive Transparency",
+      "MagSafe charging case",
+      "Spatial Audio with dynamic head tracking",
+      "Up to 6 hours of listening time"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "A002",
+    "product_title": "Samsung Galaxy Buds 2 Pro",
+    "product_image": "https://i.ibb.co.com/xyz456/galaxy-buds2-pro.jpg",
+    "category": "Accessories",
+    "price": 229,
+    "description": "Hi-Fi sound with active noise canceling.",
+    "specification": [
+      "24-bit Hi-Fi Audio",
+      "Intelligent ANC",
+      "360 Audio",
+      "Bluetooth 5.3",
+      "Up to 5 hours of playtime"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": "M001",
+    "product_title": "MacBook Air M2",
+    "product_image": "https://i.ibb.co.com/xyz789/macbook-air-m2.jpg",
+    "category": "MacBooks",
+    "price": 1199,
+    "description": "Supercharged performance in an ultra-thin design.",
+    "specification": [
+      "13.6-inch Liquid Retina display",
+      "M2 chip",
+      "8GB RAM, 256GB SSD",
+      "18-hour battery life",
+      "macOS Ventura"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "M002",
+    "product_title": "MacBook Pro 14 M2 Pro",
+    "product_image": "https://i.ibb.co.com/xyz101/macbook-pro-14.jpg",
+    "category": "MacBooks",
+    "price": 1999,
+    "description": "Powerful performance for professionals.",
+    "specification": [
+      "14.2-inch Liquid Retina XDR display",
+      "M2 Pro chip",
+      "16GB RAM, 512GB SSD",
+      "MagSafe 3 charging",
+      "macOS Ventura"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "I001",
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://i.ibb.co.com/xyz102/iphone-14-pro.jpg",
+    "category": "iPhones",
+    "price": 999,
+    "description": "A transformative iPhone experience with Dynamic Island.",
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A16 Bionic chip",
+      "48MP main camera",
+      "Always-On display",
+      "iOS 16"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "I002",
+    "product_title": "iPhone 13 Mini",
+    "product_image": "https://i.ibb.co.com/xyz103/iphone-13-mini.jpg",
+    "category": "iPhones",
+    "price": 699,
+    "description": "Compact and powerful with advanced dual-camera system.",
+    "specification": [
+      "5.4-inch Super Retina XDR display",
+      "A15 Bionic chip",
+      "Dual 12MP camera system",
+      "Cinematic mode",
+      "iOS 15"
+    ],
+    "availability": false,
+    "rating": 4.6
   }
+
 ]

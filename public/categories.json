@@ -30,14 +30,14 @@
     ]
   },
   {
-    "category": "MacBook",
+    "category": "MacBooks",
     "products": [
       { "product_id": "MB001", "product_title": "MacBook Pro 16 M3" },
       { "product_id": "MB002", "product_title": "MacBook Air M1" }
     ]
   },
   {
-    "category": "iPhone",
+    "category": "iPhones",
     "products": [
       { "product_id": "IP001", "product_title": "iPhone 14 Pro" },
       { "product_id": "IP002", "product_title": "iPhone SE 3rd Gen" }
