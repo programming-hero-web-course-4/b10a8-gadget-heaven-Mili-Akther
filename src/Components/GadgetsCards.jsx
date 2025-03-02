@@ -3,6 +3,7 @@ import Card from "./Card";
 import { useEffect, useState } from "react";
 
 const GadgetsCards = () => {
+ 
   const data = useLoaderData();
   const { category } = useParams();
   const [gadgets, setGadgets] = useState([]);
@@ -14,7 +15,7 @@ const GadgetsCards = () => {
       );
       setGadgets(filterByCategory);
     } else {
-      setGadgets(data);
+      setGadgets(data.slice(0,9));
     }
   }, [category, data]);
 
@@ -22,7 +23,7 @@ const GadgetsCards = () => {
   console.log("Filtered Gadgets:", gadgets);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[1000px]">
       {gadgets.map((gadget) => (
         <Card key={gadget.product_id} gadget={gadget}></Card>
       ))}

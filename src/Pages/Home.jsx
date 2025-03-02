@@ -25,7 +25,7 @@ const Home = () => {
       <Categories categories={categories}></Categories>
 
       {/* dynamic nested component */}  
-      <Outlet></Outlet>
+     
     </>
   );
 };
