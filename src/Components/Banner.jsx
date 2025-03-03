@@ -13,13 +13,13 @@ const Banner = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-6">
-            <Link to="/" className="hover:underline">
+            <Link to="/" className="hover:underline font-bold">
               Home
             </Link>
-            <Link to="/statistics" className="hover:underline">
+            <Link to="/statistics" className="hover:underline font-bold">
               Statistics
             </Link>
-            <Link to="/dashboard" className="hover:underline">
+            <Link to="/dashboard" className="hover:underline font-bold">
               Dashboard
             </Link>
           </ul>

@@ -172,7 +172,7 @@
   {
     "product_id": "A001",
     "product_title": "Apple AirPods Pro (2nd Gen)",
-    "product_image": "https://i.ibb.co.com/xyz123/airpods-pro.jpg",
+    "product_image": "https://i.ibb.co.com/t7wCvJh/Apple-Air-Pods-Pro-2nd-Gen.png",
     "category": "Accessories",
     "price": 249,
     "description": "Active Noise Cancellation and immersive sound experience.",
@@ -189,7 +189,7 @@
   {
     "product_id": "A002",
     "product_title": "Samsung Galaxy Buds 2 Pro",
-    "product_image": "https://i.ibb.co.com/xyz456/galaxy-buds2-pro.jpg",
+    "product_image": "https://i.ibb.co.com/fzhnG6LC/Samsung-Galaxy-Buds-2-Pro.jpg",
     "category": "Accessories",
     "price": 229,
     "description": "Hi-Fi sound with active noise canceling.",
@@ -206,7 +206,7 @@
   {
     "product_id": "M001",
     "product_title": "MacBook Air M2",
-    "product_image": "https://i.ibb.co.com/xyz789/macbook-air-m2.jpg",
+    "product_image": "https://i.ibb.co.com/xq8zghd2/Mac-Book-Air-M2.jpg",
     "category": "MacBooks",
     "price": 1199,
     "description": "Supercharged performance in an ultra-thin design.",
@@ -223,7 +223,7 @@
   {
     "product_id": "M002",
     "product_title": "MacBook Pro 14 M2 Pro",
-    "product_image": "https://i.ibb.co.com/xyz101/macbook-pro-14.jpg",
+    "product_image": "https://i.ibb.co.com/TDZvf2sj/Mac-Book-Pro-14-M2-Pro.jpg",
     "category": "MacBooks",
     "price": 1999,
     "description": "Powerful performance for professionals.",
@@ -240,7 +240,7 @@
   {
     "product_id": "I001",
     "product_title": "iPhone 14 Pro",
-    "product_image": "https://i.ibb.co.com/xyz102/iphone-14-pro.jpg",
+    "product_image": "https://i.ibb.co.com/HTKRJrRv/i-Phone-14-Pro.jpg",
     "category": "iPhones",
     "price": 999,
     "description": "A transformative iPhone experience with Dynamic Island.",
@@ -257,7 +257,7 @@
   {
     "product_id": "I002",
     "product_title": "iPhone 13 Mini",
-    "product_image": "https://i.ibb.co.com/xyz103/iphone-13-mini.jpg",
+    "product_image": "https://i.ibb.co.com/Y4z58ns2/i-Phone-13-Mini.jpg",
     "category": "iPhones",
     "price": 699,
     "description": "Compact and powerful with advanced dual-camera system.",
