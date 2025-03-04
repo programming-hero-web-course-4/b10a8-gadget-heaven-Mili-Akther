@@ -25,11 +25,11 @@ const Banner = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-circle btn-outline border-black bg-white">
-            🛒
+          <button className="btn btn-circle btn-outline border-black  bg-white">
+            <i className="fa-solid fa-cart-shopping text-gray-500 text-xl"></i>
           </button>
           <button className="btn btn-circle btn-outline border-black bg-white ml-3">
-            ❤️
+            <i className="fa-solid fa-heart text-red-600 text-xl"></i>
           </button>
         </div>
       </div>
