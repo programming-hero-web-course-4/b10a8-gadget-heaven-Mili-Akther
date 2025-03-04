@@ -8,6 +8,8 @@ const Dashboard = () => {
   const [isCart, setIsCart] = useState(true); // true -> Cart, false -> Wishlist
   const [wishlistItems, setWishlistItems] = useState([]); // Holds wishlist items
   const [showModal, setShowModal] = useState(false); // Modal state
+  const [finalTotalPrice, setFinalTotalPrice] = useState(0);
+
   const navigate = useNavigate();
 
   // Load cart data from local storage
@@ -53,10 +55,12 @@ const Dashboard = () => {
 
   // Handle Purchase
   const handlePurchase = () => {
+    setFinalTotalPrice(totalPrice); // Store total before clearing
     setShowModal(true);
-    setGadgets([]); 
-    localStorage.setItem("ToCart", JSON.stringify([])); 
+    setGadgets([]);
+    localStorage.setItem("ToCart", JSON.stringify([]));
   };
+
 
   // Close modal & navigate to home
   const handleClose = () => {
@@ -175,12 +179,12 @@ const Dashboard = () => {
 
       {/* Purchase Success Modal */}
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center backdrop-blur-md bg-white/50 bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center  bg-black/50 ">
           <div className="bg-white p-6 rounded-lg text-center shadow-lg">
             <img src={Success} alt="Success" className="w-12 mx-auto mb-3" />
             <h2 className="text-lg font-bold">Payment Successfully</h2>
             <p>Thanks for purchasing.</p>
-            <p className="font-bold">Total: ${totalPrice}</p>
+            <p className="font-bold">Total: {finalTotalPrice}</p>
             <button
               onClick={handleClose}
               className="mt-4 px-6 py-2 bg-gray-200 rounded-lg"
