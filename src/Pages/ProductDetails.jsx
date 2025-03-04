@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import StarRatings from "react-star-ratings";
+import { addToCart, addToWishlist } from "../utils";
 
 
 
@@ -9,13 +10,20 @@ const ProductDetails = () => {
   const data = useLoaderData();
   const [gadget, setGadget] = useState({});
   const { product_id } = useParams();
- 
+
   useEffect(() => {
     const singleData = data.find((item) => item.product_id === product_id);
     setGadget(singleData || {});
   }, [data, product_id]);
 
-  
+  // handle add to cart btn
+  const handleAddToCart = (gadget) => {
+    addToCart(gadget);
+  };
+  // handle wishlist btn
+  const handleWishlist = (gadget) => {
+      addToWishlist(gadget);
+  };
 
   return (
     <div className="bg-purple-600 h-[350px] text-white relative -mt-8">
@@ -89,10 +97,16 @@ const ProductDetails = () => {
 
           {/* Buttons Section */}
           <div className="flex items-center mt-4 gap-3">
-            <button className="bg-purple-600 text-white flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-purple-700 transition">
+            <button
+              onClick={() => handleAddToCart(gadget)}
+              className="bg-purple-600 text-white flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-purple-700 transition"
+            >
               Add To Cart <i className="fa-solid fa-cart-shopping bg-gray"></i>
             </button>
-            <button className="p-2 border border-gray-400 rounded-full px-4">
+            <button
+              onClick={() => handleWishlist(gadget)}
+              className="p-2 border border-gray-400 rounded-full px-4"
+            >
               <i className="fa-regular text-black fa-heart text-xl"></i>
             </button>
           </div>
