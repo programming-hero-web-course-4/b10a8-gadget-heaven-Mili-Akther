@@ -1,14 +1,12 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import StarRatings from "react-star-ratings";
-import { addToCart, addToWishlist } from "../utils";
-
-
-
+import { addToCart, addToWishlist, getAllWishlist } from "../utils";
 
 const ProductDetails = () => {
   const data = useLoaderData();
   const [gadget, setGadget] = useState({});
+  const [wishlistItems, setWishlistItems] = useState([]);
   const { product_id } = useParams();
 
   useEffect(() => {
@@ -22,8 +20,13 @@ const ProductDetails = () => {
   };
   // handle wishlist btn
   const handleWishlist = (gadget) => {
-      addToWishlist(gadget);
+    addToWishlist(gadget);
   };
+  // Load wishlist data when component mounts
+  useEffect(() => {
+    const Wishlist = getAllWishlist();
+    setWishlistItems(Wishlist);
+  }, []);
 
   return (
     <div className="bg-purple-600 h-[350px] text-white relative -mt-8">
@@ -105,7 +108,16 @@ const ProductDetails = () => {
             </button>
             <button
               onClick={() => handleWishlist(gadget)}
-              className="p-2 border border-gray-400 rounded-full px-4"
+              disabled={wishlistItems.some(
+                (item) => item.product_id === gadget.product_id
+              )}
+              className={`p-2 border border-gray-400 rounded-full px-4 ${
+                wishlistItems.some(
+                  (item) => item.product_id === gadget.product_id
+                )
+                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  : "hover:bg-gray-100"
+              }`}
             >
               <i className="fa-regular text-black fa-heart text-xl"></i>
             </button>
