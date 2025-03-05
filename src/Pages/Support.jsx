@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet-async";
 
 const Support = () => {
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
+      <Helmet>
+        <title>Support || Gadget Heaven</title>
+      </Helmet>
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Support & FAQs</h1>
 
       {/* FAQ Section */}

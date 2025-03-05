@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAllToCart, getAllWishlist } from "../utils";
 import Success from "../../src/assets/Group.png";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const [gadgets, setGadgets] = useState([]); // Holds all cart items
@@ -72,6 +73,9 @@ const Dashboard = () => {
     <div className="bg-gray-100 min-h-screen p-4">
       {/* Header Section */}
       <div className="bg-purple-600 text-white text-center py-6 rounded-lg shadow-md">
+        <Helmet>
+          <title>Dashboard || Gadget Heaven</title>
+        </Helmet>
         <h1 className="text-3xl font-bold">Dashboard</h1>
         <p className="mt-2">
           Explore the latest gadgets that will take your experience to the next

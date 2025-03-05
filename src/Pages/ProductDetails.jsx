@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import StarRatings from "react-star-ratings";
 import { addToCart, addToWishlist, getAllWishlist } from "../utils";
+import { Helmet } from "react-helmet-async";
 
 const ProductDetails = () => {
   const data = useLoaderData();
@@ -30,6 +31,9 @@ const ProductDetails = () => {
 
   return (
     <div className="bg-purple-600 h-[350px] text-white relative -mt-8">
+      <Helmet>
+        <title>Product Details || Gadget Heaven</title>
+      </Helmet>
       {/* Banner Text */}
       <div className="text-center max-w-screen-lg mx-auto p-8">
         <h1 className="text-4xl font-bold ">Product Details</h1>

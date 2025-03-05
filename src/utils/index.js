@@ -10,7 +10,7 @@ const getAllToCart = () => {
     return ToCart;
   } else {
     console.log([]);
-    return []; // Ensure it returns an empty array instead of undefined
+    return []; 
   }
 };
 

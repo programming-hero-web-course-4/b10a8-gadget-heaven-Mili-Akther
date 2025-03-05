@@ -9,7 +9,7 @@ import ErrorPage from "../Components/ErrorPage";
 import Support from "../Pages/Support";
 
 const routes = createBrowserRouter([
-  {
+  {  
     path: "/",
     element: <MainLayouts></MainLayouts>,
     errorElement: <ErrorPage></ErrorPage>,
