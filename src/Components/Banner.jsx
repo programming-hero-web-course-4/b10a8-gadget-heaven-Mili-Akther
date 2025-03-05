@@ -22,6 +22,9 @@ const Banner = () => {
             <Link to="/dashboard" className="hover:underline font-bold">
               Dashboard
             </Link>
+            <Link to="/support" className="hover:underline font-bold">
+              Support
+            </Link>
           </ul>
         </div>
         <div className="navbar-end">

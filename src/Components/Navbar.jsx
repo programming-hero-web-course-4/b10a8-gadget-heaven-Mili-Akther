@@ -19,6 +19,9 @@ const Navbar = () => {
             <Link to="/dashboard" className="hover:underline">
               Dashboard
             </Link>
+            <Link to="/support" className="hover:underline">
+              Support
+            </Link>
           </ul>
         </div>
         <div className="navbar-end">

@@ -5,11 +5,14 @@ import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
 import GadgetsCards from "../Components/GadgetsCards";
 import ProductDetails from "../Pages/ProductDetails";
+import ErrorPage from "../Components/ErrorPage";
+import Support from "../Pages/Support";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayouts></MainLayouts>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -40,6 +43,10 @@ const routes = createBrowserRouter([
         path: "/gadget/:product_id",
         element: <ProductDetails></ProductDetails>,
         loader: () => fetch("../gadgets.json"),
+      },
+      {
+        path: "/support",
+        element: <Support></Support>,
       },
     ],
   },

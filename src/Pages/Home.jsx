@@ -1,17 +1,10 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import {  useLoaderData } from "react-router-dom";
 import Banner from "../Components/Banner";
 import Heading from "../Components/Heading";
 import Categories from "../Components/Categories";
 
 const Home = () => {
-  // const categories = [
-  //   { category: "Laptops" },
-  //   { category: "Phones" },
-  //   { category: "Accessories" },
-  //   { category: "Smart Watches" },
-  //   { category: "MacBook" },
-  //   { category: "iPhone" },
-  // ];
+  
   const categories = useLoaderData();
   console.log(categories);
   return (
